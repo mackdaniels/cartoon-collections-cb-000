@@ -10,7 +10,7 @@ def long_planeteer_calls(array)
   array.collect {|i| i.length > 4}.include? true
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+def find_the_cheese(array)
+  # cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese.detect {|i| i == "cheddar" or i == "gouda" or i == "camembert"}
 end
